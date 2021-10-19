@@ -1,0 +1,37 @@
+#drum-pads-box {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px;
+}
+
+.drum-pad {
+  border: 8px solid rgb(192, 192, 192);
+  background-color: #0f0f0f;
+  width: 90px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bolder;
+  user-select: none;
+}
+
+@keyframes setneon {
+  from {
+    border: 8px solid rgb(192, 192, 192);
+  }
+  to {
+    border: 8px solid;
+    border-image: linear-gradient(227.91deg, #106af2 0%, #00e0ff 100%) 1;
+  }
+}
+
+.neon-class {
+  animation-name: setneon;
+  animation-duration: 0.1s;
+}
